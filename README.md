@@ -12,6 +12,7 @@
 ```
 ```Objc
 // 懒加载
+#pragma mark - NSObject
 - (UIImageView *)imgView
 {
     if (!_imgView) {
