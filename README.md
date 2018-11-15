@@ -32,7 +32,7 @@
 @property (nonatomic, strong) UIView *headerV;
 ```
 ```Objc
-// 初始化
+// 配置背景图
 [self.tableView addSubview:self.headerV];
 self.tableView.contentInset = UIEdgeInsetsMake(IMAGE_HEIGHT, 0, 0, 0);
 ```
