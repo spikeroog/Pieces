@@ -25,6 +25,9 @@
 }
 ```
 ## 图片下拉变大的简易实现
+```
+注：这里的包含ImageView图片的UIView，可以不是tableView或者colletionView的头部视图。这里的UIView只是单纯的将其插入到UITableView的顶部，即使原来的tableView拥有头部视图，也不会互相冲突或者影响。
+```
 ```Objc
 #define IMAGE_HEIGHT (图片高度)
 // 定义
