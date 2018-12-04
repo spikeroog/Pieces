@@ -13,8 +13,7 @@
 ```Objc
 // 懒加载
 #pragma mark - NSObject
-- (UIImageView *)imgView
-{
+- (UIImageView *)imgView {
     if (!_imgView) {
         _imgView = [[UIImageView alloc] init];
         _imgView.frame = CGRectMake(0, -kScreenHeight, kScreenWidth, kScreenHeight);
@@ -39,8 +38,7 @@ self.tableView.contentInset = UIEdgeInsetsMake(IMAGE_HEIGHT, 0, 0, 0);
 ```
 ```Objc
 // scrollView方法
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView
-{
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     // 改变图片框的大小 (上滑的时候不改变)
     // 这里不能使用offsetY，因为当（offsetY < LIMIT_OFFSET_Y）的时候，y = LIMIT_OFFSET_Y 不等于 offsetY
     CGFloat newOffsetY = scrollView.contentOffset.y;
@@ -60,8 +58,7 @@ self.tableView.contentInset = UIEdgeInsetsMake(IMAGE_HEIGHT, 0, 0, 0);
 ```Objc
 // 懒加载
 #pragma mark - NSObject
-- (UIView *)headerV
-{
+- (UIView *)headerV {
     if (!_headerV) {
         _headerV = [[UIView alloc] init];
         _headerV.frame = CGRectMake(0, -IMAGE_HEIGHT, kScreenWidth, IMAGE_HEIGHT);
